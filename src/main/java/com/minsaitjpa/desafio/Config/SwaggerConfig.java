@@ -9,7 +9,9 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+
 @Configuration
+
 public class SwaggerConfig {
     @Bean
     public Docket api() {
