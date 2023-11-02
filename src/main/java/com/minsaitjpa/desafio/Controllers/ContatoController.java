@@ -16,6 +16,7 @@ import com.minsaitjpa.desafio.Entity.Contato;
 import com.minsaitjpa.desafio.Services.ContatoService;
 
 
+
 @RestController
 @RequestMapping("/api/contatos")
 
@@ -29,11 +30,12 @@ public class ContatoController {
         return contatoService.saveContato(contato);
     }
 
+    
     @GetMapping("/{id}")
     public Contato getContatoPorId(@PathVariable Long id) {
         return contatoService.getContatoById(id);
     }
-    
+
     @GetMapping("/pessoas/{idPessoa}/contatos")
     public List<Contato> listarContatosDeUmaPessoa(@PathVariable Long idPessoa) {
         return contatoService.getContatosByPessoaId(idPessoa);

@@ -9,6 +9,7 @@ import com.minsaitjpa.desafio.Entity.Contato;
 import com.minsaitjpa.desafio.Repositories.ContatoRepository;
 
 
+
 @Service
 public class ContatoService {
 
@@ -39,16 +40,11 @@ public class ContatoService {
         Contato contatoExistente = contatoRepository.findById(id).orElse(null);
 
         if (contatoExistente != null) {
-            // Atualize os campos do contatoExistente com os valores do contatoAtualizado
             contatoExistente.setTipoContato(contatoAtualizado.getTipoContato());
             contatoExistente.setContato(contatoAtualizado.getContato());
-
-            // Certifique-se de estabelecer o relacionamento com a Pessoa, se necessário
-            // contatoExistente.setPessoa(contatoAtualizado.getPessoa());
-
             return contatoRepository.save(contatoExistente);
         } else {
-            return null; // Contato não encontrado.
+            return null;
         }
     }
 }
