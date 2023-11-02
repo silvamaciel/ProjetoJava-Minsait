@@ -7,5 +7,4 @@ import com.minsaitjpa.desafio.Entity.Pessoa;
 
 @Repository
 public interface PessoaRepository extends JpaRepository<Pessoa, Long> {
-    
 }
