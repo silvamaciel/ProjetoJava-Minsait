@@ -1,15 +1,10 @@
 package com.minsaitjpa.desafio.Dtos;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
-@ApiModel(description = "DTO para representar informações de uma Pessoa com Mala Direta")
 
 public class PessoaDTO {
     private Long id;
     private String nome;
 
-    @ApiModelProperty(value = "Mala Direta da Pessoa no formato 'Endereço - CEP: XXXXX-XXX - Cidade/UF'")
     private String malaDireta;
 
     public PessoaDTO() {
