@@ -62,6 +62,8 @@
 			<artifactId>springfox-boot-starter</artifactId>
 			<version>3.0.0</version> <!-- Verifique a versão mais recente no repositório Maven -->
 		</dependency>
+
+		
 	</dependencies>
 
 	<build>
