@@ -1,10 +1,12 @@
 package com.minsaitjpa.desafio.Dtos;
 
 
+
 public class PessoaDTO {
     private Long id;
     private String nome;
 
+    // Atributo para a mala direta que retorna um endereço formatado
     private String malaDireta;
 
     public PessoaDTO() {

@@ -8,6 +8,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "contatos")
@@ -17,11 +20,14 @@ public class Contato {
     private Long id;
 
     @Column(nullable = false)
-    private Integer tipoContato; // 0 para Telefone, 1 para Celular
+    @NotNull(message = "Tipo de contato obrigatório")
+    @Max(value = 1, message = "Tipo contato não pode ser maior que 1")
+    @Min(value = 0, message = "Tipo contato não pode ser menor que 0")
+    private int tipoContato;
 
     @Column(nullable = false)
     private String contato;
-    
+
     @ManyToOne
     @JoinColumn(name = "pessoa_id")
     private Pessoa pessoa;
@@ -58,5 +64,4 @@ public class Contato {
         this.pessoa = pessoa;
     }
 
-    
 }
