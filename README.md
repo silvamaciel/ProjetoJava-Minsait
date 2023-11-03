@@ -101,4 +101,4 @@ http://localhost:8080/swagger-ui/index.html
 Maciel Silva <br> [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/silvamaciel/)
 
 ## Agradecimentos
-Agradecimentos ao Professor Eduardo Henrique pela excelência na didática e condução do treinamento.
+Agradecimentos ao Professor Eduardo Henrique pela excelência na didática e condução do treinamento. [https://www.linkedin.com/in/eduardohmferreira/]
