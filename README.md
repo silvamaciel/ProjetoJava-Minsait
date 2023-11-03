@@ -25,7 +25,7 @@ classDiagram
     - pessoa_Id (Not Null, target Pessoa)
   }
 
-  Pessoa "1" -- "N" Contato : possui
+  Pessoa "1" -- "N" Contatos : possui
 ```
 
 ## Tecnologias Utilizadas
