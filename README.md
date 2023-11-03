@@ -18,7 +18,7 @@ classDiagram
     - uf
   }
 
-  class Contato {
+  class Contatos {
     + id (PK, Not Null)
     - tipo_contato (Not Null) [0 - Telefone, 1 - Celular]
     - contato (Not Null)
